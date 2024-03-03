@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>collegamenti</title>
+    <style>
+    body{
+        background-image: url(img/sfondomuseo.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+
+ <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Museo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="collegamenti.html">tabelle</a>
+              <a class="nav-link active" aria-current="page" href="gioco.html">gioco</a>
+
+            </div>
+          </div>
+        </div>
+                       <!--tasto chiamami-->
+                       <button  type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#prenotazioneModal">
+                        contatta un nostro developer!
+                         </button>
+                         
+                                                   
+                        <!-- Modal -->
+                       <div class="modal fade" id="prenotazioneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Vorresti Essere Contatto da un nostro developer?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                         <!-- Form per le prenotazioni -->
+                       <form>
+                        <div class="modal-body">
+                       <div class="mb-3">
+                       <label for="nome" class="form-label">scrivi la tua email</label>
+                       <input type="email" class="form-control" id="nome" required>
+                       </div>
+                       <div class="mb-3">
+                        <label for="problema" class="form-label">scrivi per quale applicativo  </label>
+                        <input type="text" class="form-control" id="problema" required>
+                       </div>
+                         <!-- Aggiungi altri campi del form se necessario -->
+                         </div>
+                       <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        <button type="submit" class="btn btn-primary">contattami !</button>
+                       </div>
+                      
+                    </form>
+                 </div>
+             </div>
+            </div>
+            </div>
+             <!--fine tasto bottone-->
+         
+      </nav>
+
+      <h1 class="text-center" style="color: white;">tabelle</h1>
+
+
+
+   <br><br>
+ <!--inizio card-->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem; margin: 5%;">
+                   <!--card 1-->
+                    <div class="card-body" style="background-color: bisque;">
+                      <h5 class="card-title">tabella visitatore</h5>
+                      <p id="testoNascosto1" class="mt-3" style="display: none;"></p>
+                      <button id="mostraTesto1" class="btn btn-primary"> vedi collegamenti</button>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="col-md-4">
+                    <div class="card" style="width: 18rem;margin: 5%;">
+                      <!--card 2-->
+                        <div class="card-body" style="background-color: bisque;">
+                          <h5 class="card-title">tabella dipendente</h5>
+                          <p id="testoNascosto2" class="mt-3" style="display: none;"></p>
+                          <button id="mostraTesto2" class="btn btn-primary">vedi collegamenti</button>
+                        </div>
+                      </div>
+                    </div>
+                       <!--card 3-->
+                      <div class="col-md-4">
+                        <div class="card" style="width: 18rem;margin: 5%;">
+                            <div class="card-body" style="background-color: bisque;">
+                              <h5 class="card-title">opera d'arte</h5>
+                              <p id="testoNascosto3" class="mt-3" style="display: none;"></p>
+                              <button id="mostraTesto3" class="btn btn-primary">vedi collegamenti</button>
+                            </div>
+                          </div>
+                        </div>
+
+                          </div>
+                        </div>
+  <br><br><br>
+
+
+                        <!--card 4-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem; margin: 5%;">
+                                        <div class="card-body" style="background-color: bisque;">
+                                          <h5 class="card-title">Sala</h5>
+                                          <p id="testoNascosto4" class="mt-3" style="display: none;"></p>
+                                          <button id="mostraTesto4" class="btn btn-primary">vedi collegamenti</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--card 5-->
+                    
+                                      <div class="col-md-4">
+                                        <div class="card" style="width: 18rem; margin: 5%;">
+                                            <div class="card-body" style="background-color: bisque;">
+                                              <h5 class="card-title">visite</h5>
+                                              <p id="testoNascosto5" class="mt-3" style="display: none;"></p>
+                                              <button id="mostraTesto5" class="btn btn-primary">vedi collegamenti</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                    
+                                          <div class="col-md-4">
+                                            <div class="card" style="width: 18rem; margin: 5%;">
+                                                <div class="card-body" style="background-color: bisque;">
+                                                  <h5 class="card-title">evento</h5>
+                                                  <p id="testoNascosto6" class="mt-3" style="display: none;"></p>
+                                                  <button id="mostraTesto6" class="btn btn-primary">vedi collegamenti</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                    
+                                              </div>
+                                            </div>
+      <br><br><br>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem; margin: 5%;">
+                    <div class="card-body" style="background-color: bisque;">
+                      <h5 class="card-title">biglietto</h5>
+                      <p id="testoNascosto7" class="mt-3" style="display: none;"></p>
+                      <button id="mostraTesto7" class="btn btn-primary">vedi collegamenti</button>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin: 5%;">
+                        <div class="card-body" style="background-color: bisque;">
+                          <h5 class="card-title">riepilogo biglietti venduti</h5>
+                          <p id="testoNascosto8" class="mt-3" style="display: none;"></p>
+                          <button id="mostraTesto8" class="btn btn-primary">vedi collegamenti</button>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="col-md-4">
+                        <div class="card" style="width: 18rem; margin: 5%;">
+                            <div class="card-body" style="background-color: bisque;">
+                              <h5 class="card-title">prenotazioni</h5>
+                              <p id="testoNascosto9" class="mt-3" style="display: none;"></p>
+                              <button id="mostraTesto9" class="btn btn-primary">vedi collegamenti</button>
+                            </div>
+                          </div>
+                        </div>
+
+                          </div>
+                        </div>
+                        <br><br><br>
+                       <!--footer-->
+                        <section>
+                            <footer class="text-center" style="background-color: bisque;">
+                                <h2 id="footer-title">Museo BitCamp</h2>
+                           
+                                <p id="footer-email"><a href="mailto:info@laboratorioorologi.com"></a>Email: info@museobitcamp.com</p>
+                                <p id="footer-phone">Telefono: 0813456789 </p>
+                                <p id="footer-address">Indirizzo: Via della pietà, 123, 00100, Germany</p>
+                           
+                                <div class="social-icons">
+                                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                </div>
+                           
+                                <p id="footer-copyright">&copy; 2024 Il Nostro Museo BitCamp. Tutti i diritti riservati.</p>
+                            </footer>
+                            </section>
+                
+      <script>
+        function mostraTesto(bottoneId, testoId, testoPersonalizzato) {
+    var bottone = document.getElementById(bottoneId);
+    var testoNascosto = document.getElementById(testoId);
+
+    bottone.addEventListener("click", function() {
+      testoNascosto.style.display = "block";
+      testoNascosto.textContent = testoPersonalizzato;
+    });
+  }
+
+  mostraTesto("mostraTesto1", "testoNascosto1", " (collegamenti: Visite) Con il sito, i clienti hanno la possibilità di accedere ad una sezione a loro dedicata mediante un form estremamente facile e alla portata di tutti  La procedura di prenotazione presso il vostro museo sarà la seguente: Inserimento dei dati anagrafici nome, cognome, telefono, indirizzo, email con l'obbligo    di inserimento sia del nome che indirizzo");
+  mostraTesto("mostraTesto2", "testoNascosto2", " (collegamenti: prenotazione,visite, prenotazioni)Un'ulteriore sezione molto importante e fondamentale che renderà il sito maggiormente accessibile a tutti, è quella relativa alla gestione dei  dipendenti. Questa è sicuramente una chicca che velocizzerà molto il flusso dell'organizzazione aziendale, rendendo tutto il personale maggiormente   organizzato durante le ore lavorative.  Tutti i dipendenti con il portale avranno assegnata una mansione ben precisa e la relativa sala del museo. Anche in questa sezione ci sarà un form    dedicato al personale, nel quale l'amministratore andrà ad inserire i dati anagrafici dei dipendenti, con l'obbligatorietà di inserimento dei dati   relativi alla mansione e indirizzo.");
+  mostraTesto("mostraTesto3", "testoNascosto3", " (collegamenti : sala)Oltre alle relative gestioni, ci sarà una tabella per le Opere d'arte presenti all'interno del museo, la quale è collegata principalmente   alla sala con il suo id, in modo tale da comprendere precisamente in quale parte del museo si trovi.");
+  mostraTesto("mostraTesto4", "testoNascosto4", "(collegamenti : visite,dipendenti,opera d arte,evento) la tabella sala è collegata con con la tabella eventi, negli eventi ci saranno alcune sale aperte");
+  mostraTesto("mostraTesto5", "testoNascosto5", "(collegamenti:visite, opera d arte, evento)la tabella visite è collegata con la tabella biglietto, tramite quali i visitatori possono scegliare quale visita scegliere");
+  mostraTesto("mostraTesto6", "testoNascosto6", "(collegamenti: biglietto, sala,dipendenti)la tabella evneto è collegata direttamente con la tabella sala e tabella dipendente");
+  mostraTesto("mostraTesto7", "testoNascosto7", "(collegamenti: riepilogo biglietti venduti, prenotazioni,visite,evento) la tabella biglietto è collegata con le tabelle visite ed evento, ");
+  mostraTesto("mostraTesto8", "testoNascosto8", " (collegamenti: biglietto, prenotazioni)la tabella biglietti venduti è collegata unicamente con la tabella biglietti");
+  mostraTesto("mostraTesto9", "testoNascosto9", "(collegamenti : biglietti venduti, dipendente,biglietto,)la tabella prenotaizoni è collegata con la tabella biglietti venduti e la tabella dei dipendenti");
+
+
+
+
+
+
+</script>
+
+      
+    
+</body>
+</html>

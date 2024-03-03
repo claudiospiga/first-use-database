@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Museo</title>
+    <style>
+        body{
+            background-image: url(img/sfondomuseo.jpg);
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+   <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Museo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="collegamenti.html">tabelle</a>
+              <a class="nav-link active" aria-current="page" href="gioco.html">gioco</a>
+
+            </div>
+          </div>
+                         <!--tasto chiamami-->
+                         <button  type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#prenotazioneModal">
+                          contatta un nostro developer!
+                           </button>
+                           
+                                                     
+                          <!-- Modal -->
+                         <div class="modal fade" id="prenotazioneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                          <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Vorresti Essere Contatto da un nostro developer?</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                           <!-- Form per le prenotazioni -->
+                         <form>
+                          <div class="modal-body">
+                         <div class="mb-3">
+                         <label for="nome" class="form-label">scrivi la tua email</label>
+                         <input type="email" class="form-control" id="nome" required>
+                         </div>
+                         <div class="mb-3">
+                          <label for="problema" class="form-label">scrivi per quale applicativo  </label>
+                          <input type="text" class="form-control" id="problema" required>
+                         </div>
+                           <!-- Aggiungi altri campi del form se necessario -->
+                           </div>
+                         <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                          <button type="submit" class="btn btn-primary">contattami !</button>
+                         </div>
+                        
+                      </form>
+                   </div>
+               </div>
+              </div>
+              </div>
+               <!--fine tasto bottone-->
+           
+        </div>
+      </nav>
+    <h1 class="text-center" style="color: white;">Presentazione Museo</h1>
+    <br>
+    <br>
+
+    <!--inizio carosello-->
+    <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 800px; margin: auto; border-radius: 40px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/museo1.jpg" class="d-block w-100" alt="museo1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/museo2.jpg" class="d-block w-100" alt="museo2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/museo3.jpg" class="d-block w-100" alt="museo3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+        <br><br>
+
+       <!--presentazione progetto-->
+        <h2 class="text-center" style="color: white;">un riassunto della nostra presentazione</h2>
+        <br>
+        <div class="container" style="background-color: bisque; border-radius: 20px;">
+        <p>il nostro progetto per il MuseoBitCamp riguarda principalmente il lato database, riguarda sia i dipendenti, i visitatori e l amministratore. i Visitatori possono consultare i vari biglietti che all interno contengono i vari eventi e opere,  l amministratore invece puo aggiungere dati e cambiare dati per i prorpi dipendenti e anche per le schede dei visitatori, dove a loro interno ci sono i vari dati personali che hanno inserito</p>
+        </div>
+ <!--card-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <!--card dipendenti-->
+                    <div class="card" style="width: 18rem; margin: 5%;">
+                        <img src="img/dipendenti.jpg" class="card-img-top" alt="dipendenti">
+                        <div class="card-body" style="background-color: bisque;">
+                          <h5 class="card-title">dipendenti</h5>
+                          <p class="card-text">applicativo progetto per i dipendenti di questo magnifico Museo!</p>
+                          <a href="collegamenti.html" class="btn btn-primary">vai a vedere la tabella</a>
+                        </div>
+                      </div>
+                      <br><br>
+                      <!--card visitatori-->
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;margin: 5%;">
+                        <img src="img/visitatore.jpg" class="card-img-top" alt="visitatore">
+                        <div class="card-body" style="background-color: bisque;">
+                          <h5 class="card-title">visitatori</h5>
+                          <p class="card-text">tramite questo applicativo i visitatori possono acquistare i biglietti</p>
+                          <a href="collegamenti.html" class="btn btn-primary">vai a vedere la tabella</a>
+                        </div>
+                      </div>
+                      <br><br>
+
+                      <!--card amministratore-->
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem; margin: 5%;">
+                        <img src="img/amministratore.jpg" class="card-img-top" alt="amministratore">
+                        <div class="card-body" style="background-color: bisque;">
+                          <h5 class="card-title">amministratore</h5>
+                          <p class="card-text">applicativo pensato proprio per questa figura, potrà gestire i dati dei suoi dipendenti e visitatori</p>
+                          <a href="collegamenti.html" class="btn btn-primary">vai a vedere la tabella</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+           <!--footer-->
+            <footer class="text-center" style="background-color: bisque;">
+                <h2 id="footer-title">Museo BitCamp</h2>
+           
+                <p id="footer-email"><a href="mailto:info@laboratorioorologi.com"></a>Email: info@museobitcamp.com</p>
+                <p id="footer-phone">Telefono: 0813456789 </p>
+                <p id="footer-address">Indirizzo: Via della pietà, 123, 00100, Germany</p>
+           
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </div>
+           
+                <p id="footer-copyright">&copy; 2024 Il Nostro Museo BitCamp. Tutti i diritti riservati.</p>
+            </footer>
+           
+
+    
+</body>
+</html>
